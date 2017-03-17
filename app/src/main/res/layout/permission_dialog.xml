@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/pimage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+
+
+         />
+        <TextView
+            android:id="@+id/pText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:layout_gravity="center"
+            style="@android:style/TextAppearance.Holo.Medium"
+            android:textStyle="bold"
+            />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/prationaletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        />
+    <ImageView
+        android:id="@+id/prationaleimage"
+        android:layout_width="match_parent"
+        android:layout_height='wrap_content'
+
+        android:layout_weight="0.5"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.2"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/buttonDeny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="@string/deny" />
+
+        <Button
+            android:id="@+id/buttonAllow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/proceed" />
+
+    </LinearLayout>
+
+</LinearLayout>

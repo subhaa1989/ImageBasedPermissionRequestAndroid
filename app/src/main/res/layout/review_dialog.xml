@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="0.6"
+    android:padding="5dp"
+    style="@style/CustomDialogStyle">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/write_review"
+        android:id="@+id/textHeader"
+        android:textStyle="bold"
+        android:layout_weight="0.05"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/rating"
+        android:id="@+id/textHeaderRating"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_weight="0.05" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_weight="0.05" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:id="@+id/editText"
+        android:hint="@string/review_text"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_weight="0.2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_photos_review"
+        android:textColor="@android:color/holo_blue_light"
+        android:id="@+id/addPhotos"
+        android:layout_weight="0.05"
+        />
+    <TextView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+       android:inputType="textMultiLine"
+        android:gravity="left"
+        android:layout_weight="0.1"
+
+        >
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:paddingTop="5dp">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/cancel"
+            android:layout_weight="0.05"
+            />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/publish_review"
+            android:id="@+id/publish"
+            android:layout_weight="0.05"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="5dp">
+
+    <!-- Author image and name -->
+    <LinearLayout android:id="@+id/list_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.3"
+       >
+        <ImageView android:id="@+id/authorProfileImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/internet_icon"
+            />
+        <TextView android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:textSize="20sp"
+            android:text="John Smith"
+            android:textStyle="bold"
+            />
+        </LinearLayout>
+    <TextView android:id="@+id/review_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dip"
+        android:textColor="@android:color/darker_gray"
+        android:layout_weight="0.1"
+        android:text="3 days ago"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            >
+            <RatingBar
+                android:id="@+id/rest_rating"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:max="5"
+
+
+                />
+
+        <TextView android:id="@+id/rating_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dip"
+
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:layout_weight="0.3"
+            />
+</LinearLayout>
+
+    <TextView android:id="@+id/review_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:layout_weight="0.5"
+        android:maxLines="10"
+       />
+
+</LinearLayout>

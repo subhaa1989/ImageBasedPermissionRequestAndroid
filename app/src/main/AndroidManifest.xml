@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.infsecurity.cispa.permissionsdialog">
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //approx loc
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    //precise loc
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    //calling phone without dialer
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    //for getting rest images from gallery
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBWUPdxlTq6k3qbVEIt_1EVVIe-JyomwMo"/>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.SERVER_KEY"
+            android:value="AIzaSyBJkLALGmySF1Zcg5YgbB7R1bVxQg5Q9GM"/>
+
+        <activity
+            android:name=".PermissionSplashScreen"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+
+            android:label="@string/title_activity_internet_permission"/>
+        <activity
+            android:name=".InternetPermissionActivity"
+            android:label="@string/title_activity_internet_permission">
+
+            <!-- android:theme="@style/Theme.AppCompat.Dialog.Alert" -->
+
+        </activity>
+        <activity
+            android:name=".RestDetailActivity"
+            android:label="@string/title_activity_rest_detail"
+             />
+        <activity android:name=".ReviewDialogActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            ></activity>
+    </application>
+
+</manifest>

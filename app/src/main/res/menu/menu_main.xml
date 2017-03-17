@@ -1,0 +1,33 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Gesto"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sms"
+        android:orderInCategory="200"
+        android:title="Search"
+        android:icon="@drawable/icon_sms1"
+        app:showAsAction="ifRoom"
+        ></item>
+    <item
+        android:id="@+id/action_call"
+        android:orderInCategory="300"
+        android:title="User"
+        android:icon="@drawable/icon_phone"
+        app:showAsAction="ifRoom"></item>
+
+    <item
+        android:id="@+id/action_compose"
+        android:orderInCategory="300"
+        android:title="User"
+        android:icon="@drawable/icon_compose1"
+        app:showAsAction="ifRoom"></item>
+
+</menu>
+

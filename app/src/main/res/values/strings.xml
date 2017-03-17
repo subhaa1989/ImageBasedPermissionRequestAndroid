@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Gusto</string>
+    <string name="title_activity_internet_permission">Gusto</string>
+    <string name="title_activity_rest_detail">Gusto</string>
+    <string name="title_activity_review_dialog">Gusto</string>
+
+    <string name="check_internet_connection">Please make sure the device is connected to the Internet</string>
+
+    <string name="title_internet_access">Gusto asks to connect to the Internet</string>
+    <string name="detail_internet_access">Internet access is required to search restaurants nearby.</string>
+
+    <string name="access_denied_string">Permission denied, the app might not work as intended.</string>
+    <string name="user_not_given_permission">Permission denied, the app might not work as intended.</string>
+
+    <string name="title_location_permission_dialog">Gusto asks for the location permission</string>
+    <string name="title_location_permission">Gusto asks for your current location</string>
+    <string name="detail_location_permission">Your current location is required to show restaurants nearby.</string>
+    <string name="access_location_granted">remove this!</string>
+
+    <string name="search_string">Search Restuarant</string>
+
+    <string name="title_sms_permission_dialog">Gusto asks for the SMS permission</string>
+    <string name="title_sms_permission">Gusto would like to send SMS</string>
+    <string name="detail_sms_permission">SMS permission is required to send information about restaurants to your contacts.</string>
+
+    <string name="title_call_permission_dialog">Gusto asks for the call permission</string>
+    <string name="title_call_permission">Gusto would like to make phone calls</string>
+    <string name="detail_call_permission">Access to the telephone is required to call the restaurant to make a reservation.</string>
+
+
+    <string name="title_gallery_permission_dialog">Gusto asks for the photo gallery permission</string>
+    <string name="title_gallery_permission">Gusto would like to access your photo gallery</string>
+    <string name="detail_gallery_permission">Access to the is required to add photos to your reviews.</string>
+
+    <string name="write_review">Write a review </string>
+    <string name="rating">YOUR RATING</string>
+    <string name="review_text">A good review covers food and drinks, atmosphere and service.</string>
+    <string name="add_photos_review">ADD PHOTOS</string>
+    <string name="publish_review">PUBLISH REVIEW</string>
+    <string name="publish_success">Your review was successfully published.</string>
+
+    <string name="cancel">cancel</string>
+    <string name="deny">deny</string>
+    <string name="proceed">proceed</string>
+
+    <string name="no_display_data">No Internet connection available. Gusto cannot fetch nearby restaurants.</string>
+    <string name="no_displaylocation_data">The current location is not available. Gusto cannot fetch nearby restaurants.</string>
+</resources>
